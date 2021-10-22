@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Xây dựng lớp hình chữ nhật</title>
+</head>
+<body>
+<canvas id="myCanvas" width="200" height="100"></canvas>
+<br>
+</body>
+<script>
+    let canvas = document.getElementById('myCanvas');
+    let ctx = canvas.getContext("2d");
+    ctx.fillStyle = "#00FF00";
+    ctx.fillRect(0, 0, 200, 75);
+
+    class Rectangle {
+        length;
+        width;
+        area;
+        perimeter;
+
+        constructor(length, width, area, perimeter) {
+            this.length = length
+            this.width = width
+            this.area = area
+            this.perimeter = perimeter
+        }
+
+        getArea() {
+            return this.length * this.width;
+        }
+
+        getPerimeter() {
+            return (this.length + this.width) * 2
+        }
+    }
+
+    let chunhat = new Rectangle(200, 75)
+    document.write('Dien tich hinh chu nhat la`: ' + chunhat.getArea() + ' cm vuong' + '<br>' + 'Chu vi hinh chu nhat la`: ' + chunhat.getPerimeter() + ' cm')
+</script>
+</html>

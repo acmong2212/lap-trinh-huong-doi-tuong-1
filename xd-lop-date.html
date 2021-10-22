@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Xây dựng lớp Date</title>
+</head>
+<body>
+
+</body>
+<script>
+    class MyDate {
+        day;
+        month;
+        year;
+
+        constructor(day, month, year) {
+            this.day = day
+            this.month = month
+            this.year = year
+        }
+
+        getDay() {
+            return this.day
+        }
+
+        setDay(day) {
+            this.day = day
+        }
+
+        getMonth() {
+            return this.month
+        }
+
+        setMonth(month) {
+            this.month = month
+        }
+
+        getYear() {
+            return this.year
+        }
+
+        setYear() {
+            this.year = year
+        }
+
+        toString() {
+            alert(this.getDay() + "/" + this.getMonth() + "/" + this.getYear());
+        }
+    }
+
+    let mydatee = new MyDate(22, 10, 2021)
+    // document.write(mydatee.getDay() + '/' + mydatee.getMonth() + '/' + mydatee.getYear() + '<br>' + '<br>')
+    // document.write('Date = ' + mydatee.getDay() + "<br>" + 'Month = ' + mydatee.getMonth() + "<br>" + 'Year = ' + mydatee.getYear())
+    mydatee.toString()
+</script>
+</html>

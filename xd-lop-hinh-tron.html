@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Xay dung lop hinh tron</title>
+</head>
+<body>
+
+</body>
+<script>
+    class Circle {
+        radius;
+        color;
+
+        constructor(radius, color) {
+            this.radius = radius
+            this.color = color
+        }
+
+        getRadius() {
+            return this.radius
+        }
+
+        getColor() {
+            return this.color
+        }
+
+        setRadius(radius) {
+            this.radius = radius
+        }
+
+        setColor(color) {
+            this.color = color
+        }
+
+        getArea() {
+            return Math.PI * this.radius * this.radius;
+        }
+
+    }
+
+    let hinhtron = new Circle(2, 'Pink')
+    alert("radius: " + hinhtron.getRadius() + "; area: " + hinhtron.getArea() + '; ' + hinhtron.getColor());
+    hinhtron.getArea()
+</script>
+</html>
